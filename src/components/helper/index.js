@@ -5,10 +5,6 @@ import { View, Animated } from 'react-native';
 import styles from './styles';
 
 export default class Helper extends PureComponent {
-  static defaultProps = {
-    numberOfLines: 1,
-  };
-
   static propTypes = {
     style: Animated.Text.propTypes.style,
     children: PropTypes.oneOfType([
@@ -22,7 +18,7 @@ export default class Helper extends PureComponent {
 
     return (
       <View style={styles.container}>
-        <Animated.Text style={[styles.text, style]} {...props}>
+        <Animated.Text style={style}>
           {children}
         </Animated.Text>
       </View>
