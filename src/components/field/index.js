@@ -450,6 +450,7 @@ export default class TextField extends PureComponent {
 
     let helperContainerStyle = {
       flexDirection: 'row',
+      minHeight: 10
     };
 
     let containerProps = {
